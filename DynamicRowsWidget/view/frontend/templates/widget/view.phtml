@@ -1,0 +1,8 @@
+<?php
+/** @var \MageINIC\DynamicRowsWidget\Block\Widget\View $block */
+/** @var \Magento\Framework\Escaper $escaper */
+?>
+<div>
+    <h3><?= $escaper->escapeHtml($block->getData('title')); ?></h3>
+    <?= $block->getConditionsSerialize(); ?>
+</div>
